@@ -1,5 +1,7 @@
 package application;
 
+import boardgam.Position;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -8,7 +10,8 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Hello Word");
+        Position pos = new Position(3,5);
+        System.out.println(pos);
 
         sc.close();
     }
